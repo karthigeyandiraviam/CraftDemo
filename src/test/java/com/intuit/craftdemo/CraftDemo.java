@@ -122,6 +122,7 @@ public class CraftDemo {
     @DataProvider (name = "queryParamNegative")
     public Iterator<Object[]> queryParamNegative() {
         List<Object[]> data = new ArrayList<Object[]>();
+        data.add(new Object[]{"http://api.nasa.gov/planetary/sounds?api_key=DEMO_KEY", 400});
         data.add(new Object[]{"https://api.nasa.gov/planetary/sounds", 403});
         data.add(new Object[]{"https://api.nasa.gov/planetary/sounds?q=appollo&limit=1", 403});
         data.add(new Object[]{"https://api.nasa.gov/planetary/sounds?q=appollo&limit=1&api_key=karthi", 403});

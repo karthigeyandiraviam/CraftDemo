@@ -1,6 +1,6 @@
 package com.intuit.craftdemo;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Created by karthi on 4/12/16.
@@ -25,23 +25,23 @@ public class Result {
             this.description = description;
             return this;
         }
-        public Builder license(@NotNull String license) {
+        public Builder license(@Nullable String license) {
             this.license = license;
             return this;
         }
-        public Builder tag_list(@NotNull String tag_list) {
+        public Builder tag_list(@Nullable String tag_list) {
             this.tag_list = tag_list;
             return this;
         }
-        public Builder download_url(@NotNull String download_url) {
+        public Builder download_url(@Nullable String download_url) {
             this.download_url = download_url;
             return this;
         }
-        public Builder stream_url(@NotNull String stream_url) {
+        public Builder stream_url(@Nullable String stream_url) {
             this.stream_url = stream_url;
             return this;
         }
-        public Builder last_modified(@NotNull String last_modified) {
+        public Builder last_modified(@Nullable String last_modified) {
             this.last_modified = last_modified;
             return this;
         }
